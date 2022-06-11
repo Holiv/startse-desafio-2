@@ -11,7 +11,6 @@ html,
 body{
     font-family: 'Raleway', sans-serif;
     font-size: 14px;
-    height: 100vh;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased; 
 }
@@ -82,9 +81,15 @@ form input{
 form [type="submit"]{
     background-color: #0080ed;
     color: white;
+    width: 150px;
+    padding-left: 0px;
+    font-size: 16px;
+    height: 40px;
 }
 form [type="submit"]:hover{
-    cursor: pointer;   
+    cursor: pointer;
+    background-color: rgba(0, 128, 237, 0.75);
+    transform: translateY(-2px);   
 }
 main .container img{
     width: 600px;
@@ -93,6 +98,9 @@ input{
     width: 100px;
 }
 /*estilização cards*/
+a{
+    text-decoration: none;
+}
 
 .cards{
     width: 80%;
@@ -114,6 +122,7 @@ input{
     cursor: pointer;
     box-shadow: 5px 5px 15px -4px #000;
     transition: all 0.3s ease 0s;
+    border-radius: 10px;
 }
 .card:hover{
     transform: translateY(-7px);
@@ -123,6 +132,8 @@ input{
     padding-top: 56.25%;
     overflow: hidden;
     position: relative;
+    border-radius: 10px 10px 0 0;
+    height: 225px;
 }
 .image img{
     position: absolute;
