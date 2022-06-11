@@ -24,11 +24,7 @@
     }
 }
 
-@media (min-height: 631px){
-    .container{
-        display: none;
-    }
-}
+
 
 @media (max-width: 1000px){
     .container{
