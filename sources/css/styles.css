@@ -323,7 +323,7 @@ a {
 
 /*grid elemento 2*/
 .contact-logo {
-    background-image: url(/sources/img/card-startse.png);
+    background-image: url(../img/card-startse.png);
     background-size: cover;
     background-position: center;
     border-radius: 0 10px 0 0;
