@@ -19,7 +19,8 @@ body {
 /*Configuração gerais de classes*/
 .container {
     max-width: 980px;
-    min-width: 480px;
+    min-width: 350px;
+    box-sizing: border-box;
 }
 
 /*Estilização do Header*/
@@ -83,7 +84,7 @@ h3 {
 }
 
 form input {
-    width: 380px;
+    width: 80%;
     padding-left: 15px;
     font-size: 18px;
     height: 45px;
