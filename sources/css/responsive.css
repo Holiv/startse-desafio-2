@@ -38,14 +38,13 @@
     }
     .menu{
         position: absolute;
-        margin-top: 30px;
+        left: 0;
+        top: 80px;
         flex-direction: column;
         width: 100vw;
         justify-content: center;
         align-items: center;
-        left: 100%;
-        transform: translateX(100vw);
-        transition: 0.5s ease transform;
+        transform: scaleX(0);
     }
     .menu>li{
         display: flex;
@@ -64,9 +63,6 @@
         flex: 1;
         text-align: center;
     }
-    /*nav{
-        display: none;
-    }*/
     main .container img{
         display: none;
     }
@@ -76,10 +72,7 @@
         justify-content: center;
         align-items: center;
     }
-    /*#checkbox-menu{
-        position: absolute;
-        opacity: 0;
-    }*/
+
     label{
         cursor: pointer;
         position: relative;
@@ -121,7 +114,9 @@
         width: 100%;;
     }
     #checkbox-menu:checked ~ nav .menu{
-        transform: translateX(-100vw);
-        transform: 0.5s ease transform;
+        transform: scaleX(1);
+        transform-origin: right;
+        transition: transform 0.5s ease;
+
     }
 }
