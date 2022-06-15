@@ -279,7 +279,6 @@ a {
     width: 98%;
     border: none;
     font: inherit;
-    color: #FFF;
     border-bottom: 2px solid #ccc;
     outline: none;
     padding-block: 5px;
@@ -299,9 +298,8 @@ a {
 }
 
 .input:focus+.input-label,
-.input:valid+.input-label {
-    transform:
-        translate(0, -25px) scale(.7);
+.input:not(:placeholder-shown)+.input-label {
+    transform: translate(0, -25px) scale(.7);
     color: #0080ed;
 }
 
@@ -318,7 +316,7 @@ a {
 }
 
 .input:focus~.border-bottom,
-.input:valid~.border-bottom {
+.input:not(:placeholder-shown)~.border-bottom {
     transform: scaleX(1);
 }
 

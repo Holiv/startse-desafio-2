@@ -142,10 +142,18 @@
     }
 
     .form-input {
-        display: none;
+        display: block;
+        width: 95%;
+        box-shadow: 20px 14px 14px 20px #cbced1, -14px -14px 20px white;
+    }
+    .contact-elements {
+        background: transparent;
+        justify-content: center;
+        padding-block: 30px;
+    }
+    .contact-elements h5,
+    .contact-elements i{
+        color: #0080ed;
     }
 
-    .form-input-responsive {
-        display: grid;
-    }
 }
